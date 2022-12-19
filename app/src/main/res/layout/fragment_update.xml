@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".UpdateFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Update User"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/update_fname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Name"
+                android:layout_marginTop="50dp"
+                android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:maxLength="10"
+                android:layout_margin="10dp" />
+
+            <EditText
+                android:id="@+id/update_lname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+                android:maxLength="10"
+                android:inputType="textPersonName"
+                android:hint="Last name"
+
+                android:layout_margin="10dp" />
+
+            <EditText
+                android:id="@+id/update_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:hint="Age"
+                android:digits="1234567890"
+                android:maxLength="2"
+                android:layout_marginTop="50dp"
+                android:layout_margin="10dp" />
+
+            <Button
+                android:id="@+id/btnUpdateUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_margin="10dp"
+                android:text="update" />
+
+        </LinearLayout>
+
+    </FrameLayout>
